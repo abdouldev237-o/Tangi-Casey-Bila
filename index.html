@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangi Casey Bila - Maître d'hôtel</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#121212',
+                            card: '#1E1E1E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #121212; color: #F3F4F6; }
+        .glass { background: rgba(30, 30, 30, 0.7); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-16 pb-12">
+        <!-- Background Gradient Accent -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-gold opacity-10 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+                
+                <!-- Avatar (UPDATED: Now a portrait shape so it doesn't cut your photo) -->
+                <div class="shrink-0 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold to-yellow-600 rounded-3xl blur opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                    <!-- Changed to a tall rounded rectangle. object-top keeps your face perfectly in frame -->
+                    <img src="avatar.png" alt="Tangi Casey Bila" class="relative w-48 h-48 md:w-56 md:h-56 object-cover object-top rounded-full border-4 border-brand-dark shadow-2xl">
+                </div>
+
+                <!-- Intro & Contact -->
+                <div class="text-center md:text-left flex-1 mt-4 md:mt-0">
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-white tracking-wide">Tangi Casey Bila</h1>
+                    <h2 class="text-xl md:text-2xl text-brand-gold font-medium mt-2 tracking-widest uppercase">Maître d'hôtel</h2>
+                    
+                    <!-- Summary -->
+                    <p class="mt-6 text-gray-400 leading-relaxed max-w-2xl text-sm md:text-base">
+                        Hospitable, presentable and hard-working team player with high standards of personal appearance and hygiene. Focused on serving every guest to the highest standards through an outgoing, polite and professional attitude. Constantly works hard to meet guest expectations and create a memorable service experience.
+                    </p>
+
+                    <!-- Contact Buttons -->
+                    <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-3">
+                        <!-- Phone -->
+                        <a href="tel:+237683049309" class="flex items-center gap-2 px-5 py-2.5 bg-brand-card hover:bg-gray-800 border border-gray-700 rounded-full transition-all text-sm font-medium text-gray-300 hover:text-white">
+                            <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            +237 6 83 04 93 09
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:bilacasey@gmail.com" class="flex items-center gap-2 px-5 py-2.5 bg-brand-card hover:bg-gray-800 border border-gray-700 rounded-full transition-all text-sm font-medium text-gray-300 hover:text-white">
+                            <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Email
+                        </a>
+                        <!-- Location -->
+                        <span class="flex items-center gap-2 px-5 py-2.5 bg-brand-card border border-gray-700 rounded-full text-sm font-medium text-gray-300">
+                            <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Yaounde, CM
+                        </span>
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@bila.bila237" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 bg-brand-card hover:bg-gray-800 border border-gray-700 rounded-full transition-all text-sm font-medium text-gray-300 hover:text-white">
+                            <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                            @bila.bila237
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Skills & Standards Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Core Strengths -->
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 shadow-lg hover:border-brand-gold/50 transition-colors duration-300">
+                <h3 class="text-xl font-serif text-white mb-4 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-brand-gold rounded-sm"></span> Core Strengths
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Guest & VIP Service</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Team Leadership</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Staff Training & Scheduling</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Cash Handling</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Bar & Cocktails</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Service Coordination</li>
+                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-gold"></div> Complaint Resolution</li>
+                </ul>
+            </div>
+
+            <!-- Service Standards -->
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 shadow-lg hover:border-brand-gold/50 transition-colors duration-300">
+                <h3 class="text-xl font-serif text-white mb-4 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-brand-gold rounded-sm"></span> Service Standards
+                </h3>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        High personal appearance & hygiene
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Polite, outgoing & professional
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Guest expectations & satisfaction
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Smooth running of busy dining areas
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Accurate cash & card transactions
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 shadow-lg hover:border-brand-gold/50 transition-colors duration-300">
+                <h3 class="text-xl font-serif text-white mb-4 flex items-center gap-2">
+                    <span class="w-2 h-6 bg-brand-gold rounded-sm"></span> Languages
+                </h3>
+                <div class="space-y-4 mt-6">
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-300 font-medium">English</span>
+                            <span class="text-brand-gold">Very Good</span>
+                        </div>
+                        <div class="w-full bg-gray-800 rounded-full h-2">
+                            <div class="bg-brand-gold h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-300 font-medium">French</span>
+                            <span class="text-brand-gold">Good</span>
+                        </div>
+                        <div class="w-full bg-gray-800 rounded-full h-2">
+                            <div class="bg-brand-gold h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+            <h2 class="text-3xl font-serif text-white mb-8 border-b border-gray-800 pb-4">Professional Experience</h2>
+            
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-brand-gold/30 before:to-transparent">
+                
+                <!-- Job 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-brand-gold bg-brand-dark text-brand-gold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-brand-card p-6 rounded-2xl border border-gray-800 shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                            <h4 class="font-bold text-white text-lg">Trainer & Team Leader</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-brand-gold/10 text-brand-gold rounded-full border border-brand-gold/20">2026</span>
+                        </div>
+                        <div class="text-brand-gold text-sm font-medium mb-4">SKY VIEW Lounge</div>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc list-outside ml-4">
+                            <li>Training and follow-up of staff training.</li>
+                            <li>Staff scheduling and time management for team members.</li>
+                            <li>Coordination of work between various restaurant departments.</li>
+                            <li>Maintaining high standards of service and customer satisfaction.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-600 bg-brand-dark text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-brand-card p-6 rounded-2xl border border-gray-800 shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                            <h4 class="font-bold text-white text-lg">Team Head & Cashier</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-gray-300 rounded-full border border-gray-700">2025-2026</span>
+                        </div>
+                        <div class="text-brand-gold text-sm font-medium mb-4">LAGON CLUB ET AFFAIRES</div>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc list-outside ml-4">
+                            <li>Coordination, staff scheduling and time management of my team mates.</li>
+                            <li>Familiarity with various types of spirits, beers, wines and cocktails.</li>
+                            <li>Time management and accurate cash handling and transaction process.</li>
+                            <li>Handle unexpected situations and ensure orders are accurately prepared.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-600 bg-brand-dark text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-brand-card p-6 rounded-2xl border border-gray-800 shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                            <h4 class="font-bold text-white text-lg">Waiter & Assistant Bartender</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-gray-300 rounded-full border border-gray-700">2023-2024</span>
+                        </div>
+                        <div class="text-brand-gold text-sm font-medium mb-4">MERINA Hotel</div>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc list-outside ml-4">
+                            <li>Serve VIP guests with precision and experience, handling drinks for high-end clients.</li>
+                            <li>Engage with guests, anticipate their needs, and provide personalized recommendations.</li>
+                            <li>Ability to stay on feet for long periods, move quickly, and carry heavy trays of food.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-600 bg-brand-dark text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-brand-card p-6 rounded-2xl border border-gray-800 shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                            <h4 class="font-bold text-white text-lg">Waiter</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-gray-300 rounded-full border border-gray-700">2021-2022</span>
+                        </div>
+                        <div class="text-brand-gold text-sm font-medium mb-4">MOULIN DE FRANCE</div>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc list-outside ml-4">
+                            <li>Efficiently managing time during busy shifts to ensure timely delivery of food and drinks.</li>
+                            <li>Resolved customer concerns with tact and professionalism, ensuring customer satisfaction.</li>
+                            <li>Handled cash and credit transactions accurately.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-600 bg-brand-dark text-gray-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-brand-card p-6 rounded-2xl border border-gray-800 shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+                            <h4 class="font-bold text-white text-lg">Sales Person</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-gray-300 rounded-full border border-gray-700">2019-2020</span>
+                        </div>
+                        <div class="text-brand-gold text-sm font-medium mb-4">CALAFATAS</div>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc list-outside ml-4">
+                            <li>Provided excellent service, being polite, friendly, and attentive to customers' needs.</li>
+                            <li>Handling complaints or special requests professionally.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section>
+            <h2 class="text-3xl font-serif text-white mb-8 border-b border-gray-800 pb-4">Education & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-brand-card p-5 rounded-xl border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h4 class="text-white font-medium text-sm md:text-base">Attestation d'initiation à la Sécurité Incendie</h4>
+                    </div>
+                    <span class="text-brand-gold font-bold text-sm bg-brand-gold/10 px-3 py-1 rounded-full">2026</span>
+                </div>
+                <div class="bg-brand-card p-5 rounded-xl border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h4 class="text-white font-medium text-sm md:text-base">Attestation of Formation in Hotel Management</h4>
+                    </div>
+                    <span class="text-brand-gold font-bold text-sm bg-brand-gold/10 px-3 py-1 rounded-full">2024</span>
+                </div>
+                <div class="bg-brand-card p-5 rounded-xl border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h4 class="text-white font-medium text-sm md:text-base">GCE Advanced Level in Business Management</h4>
+                    </div>
+                    <span class="text-brand-gold font-bold text-sm bg-brand-gold/10 px-3 py-1 rounded-full">2015</span>
+                </div>
+                <div class="bg-brand-card p-5 rounded-xl border border-gray-800 flex justify-between items-center">
+                    <div>
+                        <h4 class="text-white font-medium text-sm md:text-base">GCE Ordinary Level in Art Studies</h4>
+                    </div>
+                    <span class="text-brand-gold font-bold text-sm bg-brand-gold/10 px-3 py-1 rounded-full">2013</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section>
+            <h2 class="text-3xl font-serif text-white mb-8 border-b border-gray-800 pb-4">References</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Ref 1 -->
+                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 shadow-lg relative overflow-hidden group hover:border-brand-gold/30 transition-colors">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-gold opacity-5 rounded-bl-full group-hover:scale-110 transition-transform"></div>
+                    <h4 class="text-lg font-bold text-white">Madame Mart Monney</h4>
+                    <p class="text-brand-gold text-sm mb-3">Ressource Humaine (RH)</p>
+                    <p class="text-gray-400 text-sm mb-4">SKYVIEW Rooftop</p>
+                    <a href="tel:+237680799188" class="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        +237 680 79 91 88
+                    </a>
+                </div>
+                <!-- Ref 2 -->
+                <div class="bg-brand-card p-6 rounded-2xl border border-gray-800 shadow-lg relative overflow-hidden group hover:border-brand-gold/30 transition-colors">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-gold opacity-5 rounded-bl-full group-hover:scale-110 transition-transform"></div>
+                    <h4 class="text-lg font-bold text-white">Mr Claver Obama</h4>
+                    <p class="text-brand-gold text-sm mb-3">Directeur d'exploitation</p>
+                    <p class="text-gray-400 text-sm mb-4">Lagon Club Affaires</p>
+                    <a href="tel:+237656759380" class="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        +237 656 75 93 80
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 mt-12 bg-black/50">
+        <div class="max-w-5xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Tangi Casey Bila. All rights reserved.</p>
+            <p class="mt-2 text-xs">Maître d'hôtel & Hospitality Professional</p>
+        </div>
+    </footer>
+
+</body>
+</html>
